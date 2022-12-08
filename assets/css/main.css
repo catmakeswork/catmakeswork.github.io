@@ -2525,7 +2525,8 @@ input, select, textarea {
 
 		.spotlights > section > .image {
 			background-position: center center;
-			background-size: cover;
+			background-size: contain;
+            background-repeat: no-repeat;
 			border-radius: 0;
 			display: block;
 			position: relative;
@@ -3114,7 +3115,8 @@ input, select, textarea {
 		width: 18em;
 		z-index: 10000;
 		font-family:PaytoneOne-Regular;
-		transition: 1s background-color;
+		transition: 1s background-color, 1s opacity;
+		opacity: 100;
 	}
 
 		#sidebar > .inner {
