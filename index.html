@@ -4,39 +4,41 @@
 
 <script>
 
-window.addEventListener('scroll', function () {
+	window.addEventListener('scroll', function () {
 
-	var scroll_pos = 0;
-	var product=$("#product").offset().top;
-	var exp=$("#exp").offset().top;
-	var motion=$("#motion").offset().top;
-	var illus=$("#illus").offset().top;
-	scroll_pos = $(this).scrollTop();
+		var scroll_pos = 0;
+		var product = $("#product").offset().top;
+		var exp = $("#exp").offset().top;
+		var motion = $("#motion").offset().top;
+		var illus = $("#illus").offset().top;
+		scroll_pos = $(this).scrollTop();
 
-var x = window.matchMedia("(min-width: 1280px)")
+		var x = window.matchMedia("(min-width: 1280px)")
 
-	
-	if (scroll_pos > illus-60) {
-		$("body").css('background-color', '#65c270');}
-	else if (scroll_pos > motion - 60) {
-		$("body").css('background-color', '#00a57d');
-	} else if (scroll_pos > exp - 60) {
-		$("body").css('background-color', '#0083df');
-	}else if (scroll_pos > product - 60) {
-		$("body").css('background-color', '#0050ff');
-	}else {
-		$("body").css('background-color', '#f7f7f7');
-	}
-	
-if(x.matches){
-	if (scroll_pos > product - 60){
-		$("#sidebar").css('background-color', '#ffffff00');}
-	else{
-		$("#sidebar").css('background-color', '#0007b7');
-	}
-}
 
-})
+		if (scroll_pos > illus - 60) {
+			$("body").css('background-color', '#65c270');
+		}
+		else if (scroll_pos > motion - 60) {
+			$("body").css('background-color', '#00a57d');
+		} else if (scroll_pos > exp - 60) {
+			$("body").css('background-color', '#0083df');
+		} else if (scroll_pos > product - 60) {
+			$("body").css('background-color', '#0050ff');
+		} else {
+			$("body").css('background-color', '#f7f7f7');
+		}
+
+		if (x.matches) {
+			if (scroll_pos > product - 60) {
+				$("#sidebar").css('background-color', '#ffffff00');
+			}
+			else {
+				$("#sidebar").css('background-color', '#0007b7');
+			}
+		}
+
+	})
 
 
 
@@ -53,7 +55,8 @@ if(x.matches){
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
 
-	<meta name="description" content="Multidisciplinary portfolio by Cat (Catherine) Hong ranging from industrial design, experiences, motion, and illustration.">
+	<meta name="description"
+		content="Multidisciplinary portfolio by Cat (Catherine) Hong ranging from industrial design, experiences, motion, and illustration.">
 </head>
 
 <body class="is-preload">
@@ -91,11 +94,11 @@ if(x.matches){
 
 					<b>Cat Hong</b> (RISD) is a San Francisco based industrial designer who celebrates curiosity and
 					learning through design. She crafts human-centric experiences that inspire and delight for all ages.
-					She welcomes the next challenge in <b><a href="#product" style="color:#0050ff;">product design</a>, <a
-						href="#exp" style="color:#0083df;">experiences</a>, <a href="#motion"
-						style="color:#00a57d;">motion design</a>, and <a href="#illus"
-						style="color:#65c270;">illustration</a></b> with zest and an open <a href="sketchbook.html"
-						rel="history">sketchbook</a>.
+					She welcomes the next challenge in <b><a href="#product" style="color:#0050ff;">product design</a>,
+						<a href="#exp" style="color:#0083df;">experiences</a>, <a href="#motion"
+							style="color:#00a57d;">motion design</a>,</b> and <b><a href="#illus"
+							style="color:#65c270;">illustration</a></b> with zest and an open <a href="sketchbook.html"
+						rel="history"><b>sketchbook</b></a>.
 				</p>
 				<p>
 					Her many joys include (but are not limited to) baking babka, observing squirrels, roller skating,
@@ -116,34 +119,42 @@ if(x.matches){
 
 
 
+
+
 		<!-- One: Product -->
 		<section id="product" class="wrapper style1-alt fullscreen fade-up">
 			<div class="inner">
 				<h1 style="color:#f7f7f7;">PRODUCT</h1>
-				<div class="features">
-					<section>
-						<a href="paint-and-play-toys.html"><img
-								src="images/PRODUCT/S+C_PAINT_AND_PLAY/paintandplayicon.png"
-								style="max-width:100%; max-height:400px; height:auto;"></a>
-					</section>
-					<section>
-						<a href="crayon-exploration.html"><img
-								src="images/PRODUCT/CRAYONS/ROBOT_CRAYON/ROBOT_SMUSH_CRAYON_icon.png"
-								style="max-width:100%; max-height:400px; height:auto;"></a>
-					</section>
-					<section>
-						<a href="manny.html"><img src="images/PRODUCT/MANNY/MANNY.PNG" style="max-width:100%; max-height:400px; height:auto;"></a>
-					</section>
-					<section>
-						<a href="novelty-brushes.html"><img
-								src="images/PRODUCT/CC_NOVELTY_BRUSHES/novelty_brushes_2.png"
-								style="max-width:100%; max-height:400px; height:auto;"></a>
-					</section>
-					<section>
-						<a href="cradler.html"><img src="images/PRODUCT/CRADLER/CRADLER.png"
-								style="max-width:100%; max-height:400px; height:auto;"></a>
-					</section>
-				
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<div class="col-12"><span class="image fit">
+
+								<div class="papframe">
+									<a href="paint-and-play-toys.html"><img
+											src="images/PRODUCT/S+C_PAINT_AND_PLAY/paintandplayicon.png"
+											class="paintandplay">
+										<img src="images/PRODUCT/S+C_PAINT_AND_PLAY/paintandplayicon-hover.png"
+											class="paintover">
+									</a>
+								</div>
+
+							</span></div>
+						<div class="col-6"><span class="image fit">
+								<a href="manny.html"><img src="images/PRODUCT/MANNY/MANNY.PNG"></a>
+							</span></div>
+						<div class="col-6"><span class="image fit">
+								<a href="crayon-exploration.html"><img
+										src="images/PRODUCT/CRAYONS/ROBOT_CRAYON/ROBOT_SMUSH_CRAYON_icon.png"></a>
+							</span></div>
+
+						<div class="col-6"><span class="image fit">
+								<a href="novelty-brushes.html"><img
+										src="images/PRODUCT/CC_NOVELTY_BRUSHES/novelty_brushes_2.png"></a>
+							</span></div>
+						<div class="col-6"><span class="image fit">
+								<a href="cradler.html"><img src="images/PRODUCT/CRADLER/CRADLER.png"></a>
+							</span></div>
+					</div>
 				</div>
 
 			</div>
@@ -155,22 +166,21 @@ if(x.matches){
 		<section id="exp" class="wrapper style1-alt fullscreen fade-up">
 			<div class="inner">
 				<h1 style="color:#f7f7f7;">EXPERIENCES</h1>
-				<div class="features">
-					<section>
-						<a href="making-with-moma.html"><img src="images/EXPERIENCES/MAKINGWMOMA/MOMAPOPUP.png"
-								style="max-width:100%; height:auto;"></a>
-					</section>
-					<section>
-						<a href="tid-bits.html"><img src="images/EXPERIENCES/TID_BITS/TIDBITS_OPENCARD.png"
-								style="max-width:100%; height:auto; "></a>
-					</section>
-					<section>
-						<a href="scout.html"><img src="images/EXPERIENCES/SCOUT/scoutheader.png"
-								style="width:100%; height:auto;"></a>
-					</section>
 
+				<span class="image fit">
+					<a href="making-with-moma.html"><img src="images/EXPERIENCES/MAKINGWMOMA/MOMAPOPUP.jpg"
+							style="max-width:100%; height:auto;"></a>
+				</span>
+				<span class="image fit">
+					<a href="scout.html"><img src="images/EXPERIENCES/SCOUT/scoutheader.png"
+							style="width:100%; height:auto;"></a>
+				</span>
+				<span class="image fit">
+					<a href="tid-bits.html"><img src="images/EXPERIENCES/TID_BITS/TIDBITS_OPENCARD.jpg"
+							style="max-width:100%; height:auto; "></a>
+				</span>
+				
 
-				</div>
 
 			</div>
 		</section>
