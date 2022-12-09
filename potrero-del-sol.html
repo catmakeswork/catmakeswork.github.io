@@ -3,6 +3,24 @@
 	Hyperspace by HTML5 UP
 	-->
 <html>
+<script>
+    window.addEventListener('load', scaleVideo)
+    window.addEventListener('resize', scaleVideo)
+    function scaleVideo() {
+        var g = window.matchMedia("(max-width: 980px)")
+        console.log(g.matches)
+
+        if (!g.matches) {
+            $(".spotlights > section > .content").css('padding', '2em');
+            $(".spotlights > section > .content").css('width', '25em');
+
+        }
+        else {
+
+        }
+
+    }
+</script>
 
 <head>
     <title>Potrero Del Sol</title>
@@ -32,10 +50,10 @@
 
                 <section id="one" class="wrapper spotlights">
                     <section class>
-                        <span class="image fit"><video width="100%" height="auto" autoplay loop>
+                        <span class="vid fit"><video width="100%" height="auto" autoplay loop>
                                 <source src="images/MOTION/MOTION_GRAPHICS/potato/potato_1.mp4">
                             </video></span>
-                        <div class="content" style="padding:2em;width:25em;">
+                        <div class="content">
                             <div class="inner">
                                 <i>
                                     <p><b>Client:</b> Personal Project<br>
@@ -62,19 +80,21 @@
                     <div class="row gtr-uniform">
                         <div class="col-6">
                             <span class="image fit">
-                                <img src="images/MOTION/MOTION_GRAPHICS/potato/potrero_aerial_ref.jpg" style="padding:0 0 1em 0;">
+                                <img src="images/MOTION/MOTION_GRAPHICS/potato/potrero_aerial_ref.jpg"
+                                    style="padding:0 0 1em 0;">
                                 <i>Satellite image by Google Maps</i>
                             </span>
                         </div>
                         <div class="col-6">
-                            <span class="image fit"><img src="images/MOTION/MOTION_GRAPHICS/potato/potato_model.png"></span>
+                            <span class="image fit"><img
+                                    src="images/MOTION/MOTION_GRAPHICS/potato/potato_model.png"></span>
                         </div>
                         <div class="col-12">
                             <span class="image fit"><video width="100%" height="auto" autoplay loop>
                                     <source src="images/MOTION/MOTION_GRAPHICS/potato/potart_process1_1.mp4">
                                 </video></span>
                         </div>
-                        
+
                     </div>
                 </div>
                 <h2>Final Frames</h2>
@@ -83,17 +103,20 @@
                         <div class="col-4">
                             <span class="image fit">
                                 <img src="images/MOTION/MOTION_GRAPHICS/potato/potato_0018.png">
-                                </span></div>
-                                <div class="col-4">
-                                    <span class="image fit">
-                                        <img src="images/MOTION/MOTION_GRAPHICS/potato/potato_0103.png">
-                                        </span></div>
-                                        <div class="col-4">
-                                            <span class="image fit">
-                                                <img src="images/MOTION/MOTION_GRAPHICS/potato/potato_0290.png">
-                                                </span></div>
-                                </div>
-                                </div>
+                            </span>
+                        </div>
+                        <div class="col-4">
+                            <span class="image fit">
+                                <img src="images/MOTION/MOTION_GRAPHICS/potato/potato_0103.png">
+                            </span>
+                        </div>
+                        <div class="col-4">
+                            <span class="image fit">
+                                <img src="images/MOTION/MOTION_GRAPHICS/potato/potato_0290.png">
+                            </span>
+                        </div>
+                    </div>
+                </div>
 
                 <!--Client (Who's asking)-->
 

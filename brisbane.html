@@ -3,6 +3,25 @@
 	Hyperspace by HTML5 UP
 	-->
 <html>
+    <script>
+        window.addEventListener('load', scaleVideo)
+        window.addEventListener('resize', scaleVideo)
+        function scaleVideo() {
+            var g = window.matchMedia("(max-width: 1680px)")
+            console.log(g.matches)
+    
+            if (!g.matches) {
+                $(".spotlights > section > .content").css('padding', '2em');
+                $(".spotlights > section > .content").css('width', '25em');
+    
+            }
+            else {
+    
+            }
+    
+        }
+    </script>
+
 
 <head>
     <title>Brisbane</title>
@@ -32,10 +51,11 @@
 
                 <section id="one" class="wrapper spotlights">
                     <section class>
-                        <span class="image fit"><video width="100%" height="auto" autoplay loop>
+                        
+                        <span class="vid fit"><video width="100%" height="auto" autoplay loop>
                                 <source src="images/MOTION/MOTION_GRAPHICS/brisbane/brisbane.mp4">
                             </video></span>
-                        <div class="content" style="padding:2em;width:25em;">
+                        <div class="content">
                             <div class="inner">
                                 <i>
                                     <p><b>Client:</b> Personal Project<br>
@@ -65,7 +85,7 @@
                     <div class="row gtr-uniform">
                         <div class="col-6">
 
-                            <img src="images/MOTION/MOTION_GRAPHICS/brisbane/brisbane-ui.png">
+                           <span="image fit"> <img src="images/MOTION/MOTION_GRAPHICS/brisbane/brisbane-ui.png"></span>
                             <p>A skater's dream UI. Colors were picked from hues that remind me of Brisbane's scenery.
                             </p>
                         </div>
