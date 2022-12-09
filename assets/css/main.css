@@ -211,7 +211,8 @@ body {
 @font-face {
     font-family: 'PaytoneOne';
     src: url('../webfonts/PaytoneOne-Regular.ttf') format('truetype');
-    font-style: normal;
+    font-weight: 900;
+	font-style: normal;
     font-display: swap;
 }
 
@@ -394,7 +395,7 @@ h6 a {
 
 h1 {
 	font-size: 2.75em;
-	font-family: PaytoneOne-Regular;
+	font-family: 'PaytoneOne-Regular', PaytoneOne, sans-serif;
 	letter-spacing: 0.05em;
 
 }
@@ -425,7 +426,7 @@ h1.major:after {
 
 h2 {
 
-	font-family: PaytoneOne-Regular;
+	font-family: 'PaytoneOne-Regular', PaytoneOne, sans-serif;
 	font-size: 2em;
 	letter-spacing: 0.03em;
 }
@@ -3136,7 +3137,7 @@ body.is-preload .wrapper.fade>.inner {
 	cursor: default;
 	padding: .75em .75em;
 	text-align: center;
-	font-family: PaytoneOne-Regular;
+	font-family: 'PaytoneOne-Regular', PaytoneOne, sans-serif;
 	font-size: 1.5em;
 	letter-spacing: 0.05em;
 	align-items: center;
@@ -3354,8 +3355,11 @@ body.is-preload .wrapper.fade>.inner {
 	top: 0;
 	width: 18em;
 	z-index: 5;
-	font-family: PaytoneOne-Regular;
+	font-family: 'PaytoneOne-Regular', PaytoneOne, sans-serif;
 	transition: 1s background-color, 1s opacity;
+	-moz-transition: 1s background-color, 1s opacity;
+	-webkit-transition: 1s background-color, 1s opacity;
+	-ms-transition: 1s background-color, 1s opacity;
 	opacity: 100;
 }
 
@@ -3795,6 +3799,9 @@ body.is-preload #sidebar nav ul li {
 	z-index: 10;
 	opacity: 100;
 	transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-webkit-transition: opacity 1s;
+	-ms-transition: opacity 1s;
 
 }
 
@@ -3817,6 +3824,8 @@ body.is-preload #sidebar nav ul li {
 	text-decoration-line: underline;
 	animation: animate .9s linear infinite, anicolor 2s linear infinite;
 	-webkit-animation: animate .9s linear infinite, anicolor 2s linear infinite;
+	-moz-animation: animate .9s linear infinite, anicolor 2s linear infinite;
+	-ms-animation: animate .9s linear infinite, anicolor 2s linear infinite;
 
 
 }
