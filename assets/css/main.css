@@ -113,6 +113,10 @@ section {
 }
 
 body {
+	overflow: hidden;
+    height: 100%;
+    position: fixed;
+    width:100%;
 	line-height: 1;
 }
 
@@ -3712,7 +3716,7 @@ body.is-preload #sidebar nav ul li {
 
 #intro {
 	background-attachment: fixed;
-	background-image: url("images/intro.svg");
+	/* background-image: url("images/intro.svg"); */
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -3797,11 +3801,6 @@ body.is-preload #sidebar nav ul li {
 	justify-content: center;
 	align-items: center;
 	z-index: 10;
-	opacity: 100;
-	transition: opacity 1s;
-	-moz-transition: opacity 1s;
-	-webkit-transition: opacity 1s;
-	-ms-transition: opacity 1s;
 
 }
 
@@ -3815,7 +3814,7 @@ body.is-preload #sidebar nav ul li {
 .wavy-line:before {
 	content: attr(data-text);
 	position: relative;
-	top: 25%;
+	top: 20%;
 	color: rgba(0, 0, 0, 0);
 	width: calc(100% + 1em);
 	font-size: 20em;
@@ -3830,6 +3829,26 @@ body.is-preload #sidebar nav ul li {
 
 }
 
+.loadtext{
+	position:absolute;
+	animation: easyload 10s linear;
+	color:#ffe70a;
+	text-align: center;
+	vertical-align: middle;
+	font-size:2.8em;
+}
+
+@keyframes easyload{
+	0% {
+		opacity:0;
+	}
+	20% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+}
 
 @keyframes animate {
 	0% {

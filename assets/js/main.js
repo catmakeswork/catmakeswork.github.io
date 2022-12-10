@@ -30,10 +30,11 @@
 			
 			window.setTimeout(function() {
 				/* nice */
-				$(".loaderwrapper").css('opacity', 0);
-				$(".loaderwrapper").css('z-index', -10);
-
+				$(".loaderwrapper").fadeOut(1000);
+   
 				$body.removeClass('is-preload');
+				$('body').css({'overflow':'auto', 'height':'auto', 'position':'relative'});
+
 			}, 100);
 			
 		});
