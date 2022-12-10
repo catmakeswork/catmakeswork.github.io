@@ -3835,7 +3835,7 @@ body.is-preload #sidebar nav ul li {
 	color:#ffe70a;
 	text-align: center;
 	vertical-align: middle;
-	font-size:2.8em;
+	font-size: 3vh;
 }
 
 @keyframes easyload{
