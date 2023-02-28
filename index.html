@@ -1,347 +1,171 @@
 <!DOCTYPE HTML>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-<script>
-
-	window.addEventListener('scroll', function () {
-
-		var scroll_pos = 0;
-		var product = $("#product").offset().top;
-		var exp = $("#exp").offset().top;
-		var motion = $("#motion").offset().top;
-		var illus = $("#illus").offset().top;
-		scroll_pos = $(this).scrollTop();
-
-		var x = window.matchMedia("(min-width: 1280px)")
-
-
-		if (scroll_pos > illus - 60) {
-			$("body").css('background-color', '#65c270');
-		}
-		else if (scroll_pos > motion - 60) {
-			$("body").css('background-color', '#00a57d');
-		} else if (scroll_pos > exp - 60) {
-			$("body").css('background-color', '#0083df');
-		} else if (scroll_pos > product - 60) {
-			$("body").css('background-color', '#0050ff');
-		} else {
-			$("body").css('background-color', '#f7f7f7');
-		}
-
-		if (x.matches) {
-			if (scroll_pos > product - 60) {
-				$("#sidebar").css('background-color', '#ffffff00');
-			}
-			else {
-				$("#sidebar").css('background-color', '#0007b7');
-			}
-		}
-
-	})
-
-
-
-</script>
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <html>
 
 <head>
-	<title>CAT MAKES WORK</title>
-	<link rel="icon" type="image/x-icon" href="/favicon.png" />
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+    <title>CAT MAKES WORK</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 
-	<meta name="description"
-		content="Multidisciplinary portfolio by Cat (Catherine) Hong ranging from industrial design, experiences, motion, and illustration.">
+    <meta name="description"
+        content="Multidisciplinary portfolio by Cat (Catherine) Hong ranging from industrial design, experiences, motion, and illustration. Graduated from Rhode Island School of Design.">
+
+
 </head>
-
+<!-- 
 <div class="loaderwrapper">
-	<div class="wavy-line wavy-line-yellow" data-text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"></div>
-<div class="loadtext"><h1>CAT MAKES WORK<br><br><br>is loading . . . !</h1></div>
-</div>
+    <div class="wavy-line wavy-line-yellow" data-text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"></div>
+    <div class="loadtext">
+        <h1>CAT MAKES WORK<br><br><br>is loading . . . !</h1>
+    </div>
+</div> -->
 
 <body class="is-preload">
 
-	<!-- Sidebar -->
-	<section id="sidebar">
-		<div class="inner">
-			<nav>
-				<ul>
-					<li><a href="#intro">CAT MAKES</a></li>
-					<li><a href="#product">Product</a></li>
-					<li><a href="#exp">Experiences</a></li>
-					<li><a href="#motion">Motion</a></li>
-					<li><a href="#illus">Illustration</a></li>
-				<li><a href="/sketchbook.html">Sketchbook</a></li>
-				</ul>
-			</nav>
-		</div>
-	</section>
 
-	
 
-	<!-- Wrapper -->
-	<div id="wrapper">
-		
-		<!-- Intro -->
-		<section id="intro" class="wrapper style1 fullscreen fade-up">
-			<div class="inner">
-
-				<a id="caturl" href="#"></a>
-				<div class="cathead">
-					<h1>CAT MAKES WORK</h1>
-				</div>
-				<p>
-
-					<b>Cat Hong</b> is a designer based in San Francisco who celebrates curiosity and learning in consumer products. Her work is inspired by her multidisciplinary explorations and understanding the consumer. She welcomes the next challenge in <b><a href="#product" style="color:#0050ff;">industrial design</a>,
-						<a href="#exp" style="color:#0083df;">experiences</a>, <a href="#motion"
-							style="color:#00a57d;">motion design</a>,</b> and <b><a href="#illus"
-							style="color:#65c270;">illustration</a></b> with playful zest and an open <a href="sketchbook.html"
-						rel="history"><b>sketchbook</b></a>.
-				</p>
-				<p>
-					Her many joys include (but are not limited to) baking babka, observing squirrels, roller skating,
-					swimming laps, animating 3D sketches, and squeezing kinetic clay.</p>
-
-				<p>
-					Feel free to say: <b><a href="mailto:thecatmakes@gmail.com">“Hi!”</a>&nbsp;</b>/&nbsp;<b><a
-							href="https://www.instagram.com/thecatmakes/" target="_blank">“Like!”</a> </b>/<b> <a
-							href="https://www.linkedin.com/in/catherine-hong-59737bb1/" target="_blank">“Let’s
-							Work!”</a></b>
-
-				</p>
-			</div>
-		</section>
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="title" style="visibility:hidden;">CAT MAKES WORK</a>
 
 
 
 
+        <nav id="nav" style="visibility:hidden;">
+            <ul>
+                <li style="visibility:hidden;">
+                    <a href="index.html">
+                        <div class="iconnav" data-legend="home"><img src="images/site/hellosmall.png" class="iconz">
+                        </div>
+                        <b>about</b>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="id.html">
+                        <div class="iconnav" data-legend="industrial design">
+                            <img src="images/site/idsmall.png" class="iconz">
+                        </div>
+                        <b>industrial design</b>
+                    </a>
+                </li>
 
-		<!-- One: Product -->
-		<section id="product" class="wrapper style1-alt fullscreen fade-up">
-			<div class="inner">
-				<h1 style="color:#f7f7f7;">PRODUCT</h1>
-				<div class="box alt">
-					<div class="row gtr-uniform">
-						<div class="col-12"><span class="image fit">
+                <li>
+                    <a href="experience.html">
+                        <div class="iconnav" data-legend="experience"> <img src="images/site/expsmall.png"
+                                class="iconz"> </div>
+                        <b>experience</b>
+                    </a>
+                </li>
 
-								<div class="papframe">
-									<a href="paint-and-play-toys.html"><img
-											src="images/PRODUCT/S+C_PAINT_AND_PLAY/paintandplayicon.png"
-											class="paintandplay"  alt="Paint and Play Toys">
-										<img src="images/PRODUCT/S+C_PAINT_AND_PLAY/paintandplayicon-hover.png"
-											class="paintover" alt="Paint and Play Toys">
-									</a>
-								</div>
+                <li>
+                    <a href="motion.html">
+                        <div class="iconnav" data-legend="motion"><img src="images/site/anismall.png" class="iconz">
+                        </div>
+                        <b>motion</b>
+                    </a>
+                </li>
 
-							</span></div>
-						<div class="col-6"><span class="image fit">
-								<a href="manny.html"><img src="images/PRODUCT/MANNY/MANNY.PNG" alt="Manny the Tapoot"></a>
-							</span></div>
-						<div class="col-6"><span class="image fit">
-								<a href="crayon-exploration.html"><img
-										src="images/PRODUCT/CRAYONS/ROBOT_CRAYON/ROBOT_SMUSH_CRAYON_icon.png" alt="Crayon Exploration"></a>
-							</span></div>
+                <li>
+                    <a href="illustration.html">
+                        <div class="iconnav" data-legend="illustration"><img src="images/site/illussmall.png"
+                                class="iconz"></div>
+                        <b>illustration</b>
+                    </a>
+                </li>
 
-						<div class="col-6"><span class="image fit">
-								<a href="novelty-brushes.html"><img
-										src="images/PRODUCT/CC_NOVELTY_BRUSHES/novelty_brushes_2.png" alt="Novelty Paint Brushes"></a>
-							</span></div>
-						<div class="col-6"><span class="image fit">
-								<a href="cradler.html"><img src="images/PRODUCT/CRADLER/CRADLER.png" alt="Cradler"></a>
-							</span></div>
-					</div>
-				</div>
-
-			</div>
-		</section>
-
-
-
-		<!-- Two: Experiences -->
-		<section id="exp" class="wrapper style1-alt fullscreen fade-up">
-			<div class="inner">
-				<h1 style="color:#f7f7f7;">EXPERIENCES</h1>
-
-				<span class="image fit">
-					<a href="making-with-moma.html"><img src="images/EXPERIENCES/MAKINGWMOMA/MOMAPOPUP.jpg"
-							style="max-width:100%; height:auto;" alt="Making with MoMA Pop-Up"></a>
-				</span>
-				
-				<span class="image fit">
-					<a href="scout.html"><img src="images/EXPERIENCES/SCOUT/scoutheader.jpg"
-							style="width:100%; height:auto;" alt="Scout App"></a>
-				</span>
-				<span class="image fit">
-					<a href="CAMP-by-Walmart-Tid-Bits.html"><img src="images/EXPERIENCES/TID_BITS/TIDBITS_OPENCARD.jpg"
-							style="max-width:100%; height:auto; " alt="Tid-Bits for Walmart"></a>
-				</span>
-				<span class="image fit">
-					<a href="dream-skate-maker.html"><img src="images/EXPERIENCES/DREAM_SKATE_MAKER/dream-skate-maker-banner-2.jpeg"></a>
-				</span>
+                <li style="visibility:hidden;">
+                    <a href="sketchbook.html" data-legend="sketchbook">
+                        <div class="iconnav"><img src="images/site/booksmall.png" class="iconz"></div>
+                        <b>sketchbook</b>
+                    </a>
+                </li>
 
 
-			</div>
-		</section>
+            </ul>
+        </nav>
+
+    </header>
 
 
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-		<!-- Three:Motion -->
-		<section id="motion" class="wrapper style1-alt fullscreen fade-up">
-			<div class="inner">
-				<h1 style="color:#f7f7f7;">MOTION</h1>
-				<div class="box alt">
-					<div class="row gtr-uniform">
-						<div class="col-12" style="margin:0em;"><span class="image fit">
-								<video width="100%" height="auto" controls poster="images/MOTION/demoreel.png">
-									<source src="images/MOTION/CAT_HONG_SHOW_REEL_22.mp4">
-								</video>
-							</span></div>
-
-						<div class="col-6"><span class="image fit">
-								<a href="pandemic-self-portrait.html"> <video width="100%" height="auto" autoplay loop>
-									<source src="images/MOTION/MOTION_GRAPHICS/SELFPORTRAIT.mp4">
-								</video></a>
-							</span></div>
-
-						<div class="col-6"><span class="image fit">
-							<a href="gatcha.html"><video width="100%" height="auto" autoplay loop>
-									<source src="images/MOTION/MOTION_GRAPHICS/gatcha/gatcha.mp4">
-								</video></a>
-							</span></div>
-
-						<div class="col-12" style="margin:0em;"><span class="image fit">
-								<a href="hallows-bugs.html"> <video width="100%" height="auto" autoplay loop>
-									<source src="images/MOTION/MOTION_GRAPHICS/hallowsbugs/HALLOWEENBUGS_FULL.mp4">
-								</video></a>
-							</span></div>
-						<div class="col-6"><span class="image fit">
-							<a href="nekojita.html"><video width="100%" height="auto" autoplay loop muted>
-									<source src="images/MOTION/MOTION_GRAPHICS/catstongue.mp4">
-								</video></a>
-							</span></div>
-
-						<div class="col-6"><span class="image fit">
-								<a href="jellygal.html"> <video width="100%" height="auto" autoplay loop muted>
-									<source src="images/MOTION/MOTION_GRAPHICS/jellygal/JELLYGAL.mp4">
-								</video></a>
-							</span></div>
+        <!-- Intro -->
+        <section id="intro" class="home wrapper">
+            <div class="inner">
+                <div class="profile">
+                    <img src="images/head-noeyes.png" onclick="this.src='images/smile-noeyes.png'">
+                    <div class=cranium>
+                        <div class='eye'></div>
+                        <div class='eye'></div>
+                    </div>
+                </div>
+                
 
 
+                <div class="cathead">
+                    <h1 class="mega" style="margin-bottom:0;">Hi, I'm Cat!</h1>
+                </div>
+                <p style="margin:0;">I am a designer based in San Francisco who celebrates curiosity and learning in
+                    consumer products.
+                    My work is inspired by the consumer and my the intersection of my multidisciplinary expertises in:
+                </p>
+                <div class="mainmenu">
+                    <p> <a href="id.html" class="button">
+                            industrial design
+                        </a>
+                        <a href="motion.html" class="button">
+                            motion
+                        </a>
+                        <a href="experience.html" class="button">
+                            experiences
+                        </a>
+                        <a href="illustration.html" class="button">
+                            illustration
+                        </a>
+                </div>
+                </p>
+
+                <p style="margin:0;">In between projects, I enjoy baking pies, observing squirrels, roller skating,
+                    swimming laps,
+                    squeezing kinetic clay, or <a href="sketchbook.html">experimental projects.</a></p>
+                <center>
+
+                    <p>
+                    <h2 style="margin-bottom:0; margin-top:.5em;">Let's make things together,</h2>
+                    <div class="msgme" style="margin-top:0;">
+                        <a href="mailto:thecatmakes@gmail.com" target="_blank"><img
+                                src="images/site/lettersmall.png"></a>
+                        <a href="https://www.instagram.com/thecatmakes/" target="_blank"><img
+                                src="images/site/instasmall.png"
+                                style="height:4.25em;padding-top:0;padding-bottom:.75em;"></a>
 
 
+                    </div>
+                    </p>
+                </center>
 
-						<div class="col-4"><span class="image fit">
-								<a href="brisbane.html"> <video width="100%" height="auto" autoplay loop muted>
-									<source src="images/MOTION/MOTION_GRAPHICS/brisbane/brisbane.mp4">
-								</video></a>
-							</span></div>
+            </div>
+        </section>
 
-						<div class="col-4"><span class="image fit">
-								<a href="potrero-del-sol.html"> <video width="100%" height="auto" autoplay loop muted>
-									<source src="images/MOTION/MOTION_GRAPHICS/potato/potato_1.mp4">
-								</video></a>
-							</span></div>
+        <!-- Footer -->
 
-						<div class="col-4"><span class="image fit">
-								<div style="aspect-ratio: 0.5625;">
-									<a href="bye-bye.html"><video autoplay loop muted
-										style="width:100%; height:100%; object-fit: cover; object-position: 47% 0 ;">
-										<source src="images/MOTION/MOTION_GRAPHICS/byebye.mp4"></a>
-									</video>
-								</div>
-							</span></div>
-
-						<div class="col-4"><span class="image fit">
-
-								<a href="wfh2020.html"> <video width="100%" height="auto" autoplay loop>
-									<source src="images/MOTION/MOTION_GRAPHICS/WFH2020.mp4">
-								</video></a>
-
-
-							</span></div>
-
-						<div class="col-4"><span class="image fit">
-								<a href="babe-lizard.html"> <video width="100%" height="auto" autoplay loop>
-									<source src="images/MOTION/MOTION_GRAPHICS/BABELIZARD 0.mp4">
-								</video></a>
-							</span></div>
-						<div class="col-4"><span class="image fit">
-								<a href="bagtree.html"> <video width="100%" height="auto" autoplay loop muted>
-									<source src="images/MOTION/MOTION_GRAPHICS/BAGTREE.mp4">
-								</video></a>
-							</span></div>
-
-					</div>
-		</section>
-
-
-
-		<!-- Four: Illustration -->
-		<section id="illus" class="wrapper style1-alt fullscreen fade-up">
-			<div class="inner">
-				<h1 style="color:#f7f7f7;">ILLUSTRATION</h1>
-				<div class="features">
-					<section>
-						<a href="animal-antics.html"><img src="images/ILLUSTRATION/S+C_ANIMAL_ANTICS/aa-button.png"
-								style="max-width:100%; max-height:400px; height:auto;" alt="Animal Antics Coloring Cards"></a>
-					</section>
-					<section>
-						<a href="bay-area-bear-sticker.html"><img
-								src="images/ILLUSTRATION/BIQ_STICKER/BEAR-STICKER-button.png"
-								style="max-width:100%; max-height:400px; height:auto;" alt="Bay Area Bear Stickers"></a>
-					</section>
-					<section>
-						<a href="punch-butt-prints.html"><img
-								src="images/ILLUSTRATION/2LEGGED/PUNCH_BUTT_PRINTS_SWEATER.png"
-								style="max-width:100%; max-height:400px; height:auto;" alt="Punch Butt Prints"></a>
-					</section>
-					<section>
-						<a href="creature-feature.html"><img
-								src="images/ILLUSTRATION/S+C_CREATURE_FEATURE/creaturefeature.png"
-								style="max-width:100%; max-height:400px; height:auto;"  alt="Color-by-Number Cryptid Cards"></a>
-					</section>
-					
-				</div>
-
-			</div>
-		</section>
-
-
-		<!-- Footer -->
-		<footer id="footer" class="wrapper style1-alt fade-up">
-			<div class="inner">
-				<ul class="menu">
-					<li>&copy; 2022 Cat Makes Work by Catherine Hong. All rights reserved &#10047;</li>
-					<li>Template: <a href="http://html5up.net" style="color:#ffffff50;">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-			crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-			crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-			crossorigin="anonymous"></script>
+        <!-- Scripts -->
+       
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
 </body>
 
