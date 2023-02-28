@@ -12,9 +12,17 @@
 		$body = $('body'),
 		$sidebar = $('#sidebar');
 
+		var eye = $(".eye");
+
+		eye.css({
+			'-webkit-transform': 'rotate(' + -90 + 'deg)',
+			'-moz-transform': 'rotate(' + -90 + 'deg)',
+			'-ms-transform': 'rotate(' + -90 + 'deg)',
+			'transform': 'rotate(' + -90 + 'deg)'
+		});
+
 
 		$('body').mousemove(function (event) {
-			var eye = $(".eye");
 			console.log('eye', eye)
 			var x = (eye.offset().left) + (eye.width() / 2);
 			var y = (eye.offset().top) + (eye.height() / 2);
@@ -50,7 +58,7 @@
 		'</nav>' +
 
 
-		'<h1 style="margin-top:15em;">Contact</h1>' +
+		'<h1 style="margin-top:14em;">Contact</h1>' +
 		'<nav>' +
 		/*insta*/
 		'<a href="https://www.instagram.com/thecatmakes/" class="link depth-0" target="_blank">' +

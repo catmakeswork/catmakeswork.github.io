@@ -461,6 +461,9 @@ h6 {
     h1 {
         font-size: 2em;
     }
+    h1.mega{
+        font-size:2em;
+    }
 
     h2 {
         font-size: 1.25em;
@@ -3139,6 +3142,9 @@ body.landing #header {
     #intro p {
         font-size: 1em;
     }
+    body{
+        font-size: 16px;
+    }
 
 }
 
@@ -3355,11 +3361,12 @@ text-align: center;
     justify-content: center;
     border-radius: 5em 5em 0 0;
     padding:1em 0 0 0;
+    
 }
 .cranium{
-    width:100%;
+    width:50%;
    position:absolute;
-   left:50vw;
+   left:50%;
     z-index: -11;
     margin-left: -2.25em;
     margin-top:3em;
@@ -3531,15 +3538,15 @@ text-align: center;
         width: 90vw;
         z-index: 1000;
         background: white;
-        padding: 1em 2em 15em 2em;
-        border-radius: 3em;
+        padding: 1em .5em 15em .5em;
+        border-radius: 2em;
     }
 
     #navPanel h1 {
         font-size: 2.5em;
         text-align:center;
 
-    margin: 0.5em 0 0.5em 0;
+    margin: 0.125em 0 0.5em 0;
     }
 
     #navPanel .link {
@@ -3549,7 +3556,7 @@ text-align: center;
         border-radius: 3em;
         border: .125em solid #8193FB;
         padding: 0 .25em;
-        margin: .5em 0;
+        margin: .25em 0;
         cursor: pointer;
         color: #8193FB;
         float: left;
@@ -3561,10 +3568,10 @@ text-align: center;
     {
         position:relative;
         display: flex;
-        justify-content: center;
-        font-size: 1.5em;
-        line-height: 2.75em;  
-        margin-left: 3.5vw;
+        font-size: 1em;
+        line-height: 1em;  
+        margin-left: 5em;
+        padding-top:1.5em;
         
     }
     .iconz {
