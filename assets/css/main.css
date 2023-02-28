@@ -2995,6 +2995,7 @@ body.is-preload .wrapper.fade>.inner {
     letter-spacing: .0em;
     font-family: 'PaytoneOne-Regular', PaytoneOne, sans-serif;
     line-height: 4em;
+    z-index: 420;
 }
 
 #header nav {
