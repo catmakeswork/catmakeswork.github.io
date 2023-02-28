@@ -64,7 +64,6 @@
 		'<a href="https://www.instagram.com/thecatmakes/" class="link depth-0" target="_blank">' +
 		'<span class="indent-0"></span>' +
 
-
 		'<img src="/images/site/instasmall.png" class="iconz">' +
 
 		'<b>instagram</b></a>' +
