@@ -3392,6 +3392,7 @@ body.landing #header {
     background: white;
     margin-left: .25em;
     margin-right: .25em;
+    margin-top:.3em;
 }
 
 .eye:after {
