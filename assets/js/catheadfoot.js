@@ -27,8 +27,9 @@
             '<h1>Menu</h1>' +
             '<ul>' +
                 '<li><a href="index.html">Home</a></li>' +
-                '<li><a href="say-redesign.html">Say Redesign</a></li>' +
+              
                 '<li><a href="scout.html">Scout</a></li>' +
+                '<li><a href="say-redesign.html">Say Redesign</a></li>' +
                 '<li><a href="designing-for-play.html">Designing for Play</a></li>' +
                 '<li><a href="illustrations.html">Illustrations</a></li>' +
                 '<li><a href="about.html">About</a></li>' +
