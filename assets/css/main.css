@@ -195,7 +195,9 @@ body {
 	background-repeat: repeat;
 	background-image: url("/images/bgtxture.jpg");
 	background-blend-mode: multiply;
-	
+	@supports (background-image: url('/images/bgtxture.webp')){
+		background-image: url('/images/bgtxture.webp');
+	}
 }
 
 body.is-preload *,
@@ -3022,7 +3024,7 @@ body.is-menu-visible #menu .close {
 	margin-top: 0em;
 	list-style: none;
 	font-size: 0.8em;
-	color: rgba(88, 88, 88, 0.5);
+	color: rgba(88, 88, 88);
 }
 
 #footer>.inner .copyright a {
