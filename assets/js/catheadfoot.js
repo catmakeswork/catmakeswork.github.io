@@ -64,7 +64,7 @@
             '<div class="inner">' +
 
                 '<ul class="copyright">' +
-                '<li>&copy; Catherine Hong. All rights reserved</li>' +
+                '<li> Coded with love by &copy; Catherine Hong. All rights reserved</li>' +
                 '<li>Template: <a href="http://html5up.net">HTML5 UP</a></li>' +
                 '</ul>' +
             '</div>' +
