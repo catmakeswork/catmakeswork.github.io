@@ -3459,7 +3459,7 @@ body.is-touch .gallery article .content {
 @media screen and (max-width: 736px) {
 
 	.gallery {
-		margin: -1.25em 0 0 -1.25em;
+		margin: -1.25em 5em;
 	}
 
 	.gallery article {
