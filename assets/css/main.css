@@ -195,8 +195,8 @@ body {
 	background-repeat: repeat;
 	background-image: url("/images/bgtxture.jpg");
 	background-blend-mode: multiply;
-	@supports (background-image: url('/images/bgtxture.webp')){
-		background-image: url('/images/bgtxture.webp');
+	@supports (background-image: url("/images/bgtxture.webp")){
+		background-image: url("/images/bgtxture.webp");
 	}
 }
 
