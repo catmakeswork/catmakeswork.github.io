@@ -2540,6 +2540,10 @@ table.alt tfoot {
 	z-index: -50;
 }
 
+.tiles article.styleWide>.image:before{
+	width: 100%;
+}
+
 body:not(.is-touch) .tiles article:hover>.image:before {
 	background-color: #bad6cd;/* #063626; */
 	opacity: 0.6;
